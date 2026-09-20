@@ -39,27 +39,27 @@
       document.querySelectorAll("#team .team-card").forEach((card) => {
         const details = {
           "Shubham Salunke": [
-            "shubham-salunke.jpg",
+            "shubham-salunke.png",
             "Shubham Salunke - Founder & Team Lead, DudhAmrut",
             "emerald",
           ],
           "Dhiraj Gaikwad": [
-            "dhiraj-gaikwad.jpg",
+            "dhiraj-gaikwad.png",
             "Dhiraj Gaikwad - Platform Development & Finance, DudhAmrut",
             "green",
           ],
           "Sakshi Bhosale": [
-            "sakshi-bhosale.jpg",
+            "sakshi-bhosale.png",
             "Sakshi Bhosale - Product Development, DudhAmrut",
             "purple",
           ],
           "Pratiksha Mane": [
-            "pratiksha-mane.jpg",
+            "pratiksha-mane.jpeg",
             "Pratiksha Mane - Business & Stakeholder Engagement, DudhAmrut",
             "orange",
           ],
           "Shital Yadav": [
-            "shital-yadav.jpg",
+            "shital-yadav.jpeg",
             "Shital Yadav - Operations & Quality Validation, DudhAmrut",
             "teal",
           ],
