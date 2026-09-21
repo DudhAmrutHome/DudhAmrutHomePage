@@ -1,0 +1,2573 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DudhAmrut | Trust in Every Drop</title>
+    <meta name="theme-color" content="#0284c7" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop stop-color='%234f46e5'/%3E%3Cstop offset='1' stop-color='%237c3aed'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Cpath d='M16 6c3 4 7 7.5 7 12a7 7 0 1 1-14 0c0-4.5 4-8 7-12z' fill='%23fff'/%3E%3C/svg%3E"
+    />
+    <meta
+      name="description"
+      content="DudhAmrut connects dairy operations through IoT quality monitoring, traceability, and intelligent decision-making from collection to consumer."
+    />
+    <meta
+      name="keywords"
+      content="DudhAmrut, dairy traceability, milk quality monitoring, IoT dairy platform, FSSAI FoSCoS compliance, dairy SaaS India, farm to consumer milk, milk adulteration detection, dairy tech Maharashtra"
+    />
+    <meta property="og:title" content="DudhAmrut | Trust in Every Drop" />
+    <meta
+      property="og:description"
+      content="IoT and Blockchain-powered traceability for a purer, more transparent, and safer dairy supply chain."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dudhamrut.in/" />
+    <meta property="og:image" content="images/home/home.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DudhAmrut",
+        "description": "IoT and Blockchain-powered dairy traceability and quality monitoring platform for a safer, more transparent milk supply chain.",
+        "email": "dudhamrut.official@gmail.com",
+        "areaServed": "Maharashtra, India",
+        "slogan": "Trust in Every Drop"
+      }
+    </script>
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Animate on Scroll (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "text-primary": "#1e293b",
+              "text-secondary": "#475569",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="styles.css?v=18" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Header -->
+    <header
+      id="header"
+      class="fixed top-0 z-50 w-full transition-all duration-300"
+    >
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a
+          href="#top"
+          class="flex items-center gap-3"
+          aria-label="DudhAmrut home"
+        >
+          <span
+            class="flex items-center justify-center w-10 h-10 bg-emerald-900 text-white"
+            aria-hidden="true"
+            ><i data-lucide="droplets" class="w-5 h-5"></i
+          ></span>
+          <span
+            ><strong class="block text-xl font-bold text-emerald-950"
+              >DudhAmrut</strong
+            ><small
+              class="block text-[10px] uppercase tracking-[.18em] text-emerald-700"
+              >Dairy intelligence</small
+            ></span
+          >
+        </a>
+        <nav
+          class="hidden md:flex items-center gap-7"
+          aria-label="Primary navigation"
+        >
+          <a href="#problem" class="font-semibold transition">Problem</a>
+          <a href="#solution" class="font-semibold transition">Solution</a>
+          <a href="#features" class="font-semibold transition">Platform</a>
+          <a href="#architecture" class="font-semibold transition"
+            >Technology</a
+          >
+          <a href="#evidence" class="font-semibold transition">Evidence</a>
+          <a href="#market" class="font-semibold transition">Market</a>
+          <a href="#impact" class="font-semibold transition">Impact</a>
+          <a href="#team" class="font-semibold transition">Team</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <a
+            href="#demo"
+            class="hidden sm:inline-flex items-center gap-2 font-semibold px-5 py-2.5 bg-emerald-900 text-white rounded-lg transition hover:bg-emerald-950 hover:-translate-y-0.5 shadow-md shadow-emerald-900/20"
+            style="color: white"
+            data-magnetic
+            >Explore DudhAmrut
+            <i
+              data-lucide="arrow-up-right"
+              class="w-4 h-4"
+              style="color: white"
+            ></i
+          ></a>
+          <button
+            class="mobile-menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobileNav"
+            aria-label="Open navigation"
+          >
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+      <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#features">Platform</a>
+        <a href="#architecture">Technology</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#market">Market</a>
+        <a href="#impact">Impact</a>
+        <a href="#team">Team</a>
+        <a
+          href="#demo"
+          class="mobile-demo-btn"
+          data-magnetic
+          >Contact / Demo
+          <i data-lucide="arrow-up-right" class="w-4 h-4"></i
+        ></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- Hero Section -->
+      <section class="hero-bg relative">
+        <div class="container mx-auto px-6 relative z-10">
+          <div data-aos="fade-up">
+            <span class="hero-kicker">Field-tested dairy intelligence</span>
+            <h1>Trust in Every <span>Drop.</span></h1>
+            <p class="mt-6">
+              DudhAmrut connects farm collection, cold chain, and retail quality
+              through verified monitoring, traceability, and operational
+              decision support from source to consumer.
+            </p>
+            <div class="hero-badges">
+              <span class="hero-badge"
+                ><i data-lucide="leaf"></i> Traceable milk</span
+              >
+              <span class="hero-badge"
+                ><i data-lucide="shield-check"></i> Quality assurance</span
+              >
+              <span class="hero-badge"
+                ><i data-lucide="activity"></i> Real-time signals</span
+              >
+            </div>
+            <div class="hero-actions">
+              <a
+                href="#features"
+                class="inline-flex items-center gap-2 text-white font-semibold px-6 py-3 transition hover:bg-emerald-950 glow-button bg-emerald-900"
+                data-magnetic
+                >Book a pilot <i data-lucide="arrow-right" class="w-4 h-4"></i
+              ></a>
+              <a href="#evidence" class="hero-secondary"
+                >See field evidence
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="hero-visual"
+            aria-label="Dairy quality monitoring from collection to consumer"
+            data-aos="fade-left"
+            data-aos-delay="150"
+          >
+            <div class="hero-visual-card">
+              <img
+                src="images/home/home.jpg"
+                alt="DudhAmrut dairy intelligence platform in its home environment"
+              />
+              <div class="hero-visual-label">
+                <span>Quality signal</span
+                ><span class="hero-visual-live">Live deployment</span>
+              </div>
+            </div>
+            <div class="hero-float-chip hero-float-chip--iot">
+              <i data-lucide="radio"></i>
+              <span
+                ><b>IoT sensors active</b><small>Live quality feed</small></span
+              >
+            </div>
+            <div class="hero-float-chip hero-float-chip--qr">
+              <i data-lucide="qr-code"></i>
+              <span><b>QR verified</b><small>Farm to consumer</small></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="DudhAmrut ecosystem">
+        <div
+          class="container mx-auto px-6 py-8 flex flex-col lg:flex-row items-center justify-between gap-6"
+        >
+          <p class="text-xs uppercase tracking-[.16em] font-bold leading-none">
+            Built with field context
+          </p>
+          <div
+            class="flex flex-wrap justify-center items-center gap-x-10 gap-y-5"
+          >
+            <img
+              src="images/partners/coe-dairy-baramati.png"
+              alt="Centre of Excellence in Dairy, Baramati"
+              loading="lazy"
+            />
+            <img
+              src="images/partners/aic-adt-baramati.png"
+              alt="Atal Incubation Center ADT Baramati"
+              loading="lazy"
+            />
+            <img
+              src="images/partners/kvk-krushik.png"
+              alt="KVK Krushik National Agriculture Exhibition"
+              loading="lazy"
+            />
+            <img
+              src="images/partners/svpm-college.png"
+              alt="SVPM College of Engineering, Malegaon"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Problem Section -->
+      <section id="problem" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12" data-aos="fade-up">
+            <p class="section-eyebrow mb-3">The dairy quality crisis</p>
+            <h2 class="text-3xl font-bold font-montserrat text-slate-800">
+              The Problem We Solve
+            </h2>
+            <p class="mt-4 max-w-3xl mx-auto text-text-secondary">
+              India produces 23% of global milk, yet faces critical issues that
+              threaten public health and farmer livelihoods. Tap any node to
+              explore how each breaks the chain.
+            </p>
+          </div>
+
+          <div class="problem-network-shell" data-aos="fade-up">
+            <div class="problem-network" id="problemNetwork">
+              <div
+                class="network-connection"
+                data-node="adulteration"
+                style="--angle: 270deg; --line-rgb: 239, 124, 119"
+              ></div>
+              <div
+                class="network-connection"
+                data-node="traceability"
+                style="--angle: 330deg; --line-rgb: 125, 181, 230"
+              ></div>
+              <div
+                class="network-connection"
+                data-node="spoilage"
+                style="--angle: 30deg; --line-rgb: 131, 196, 153"
+              ></div>
+              <div
+                class="network-connection"
+                data-node="health"
+                style="--angle: 90deg; --line-rgb: 232, 150, 180"
+              ></div>
+              <div
+                class="network-connection"
+                data-node="fssai"
+                style="--angle: 150deg; --line-rgb: 231, 190, 117"
+              ></div>
+              <div
+                class="network-connection"
+                data-node="distrust"
+                style="--angle: 210deg; --line-rgb: 190, 162, 226"
+              ></div>
+
+              <div class="problem-core" id="problemCore" aria-live="polite">
+                <div class="problem-core-intro">
+                  <i data-lucide="droplets"></i>
+                  <span>Dairy Supply Chain</span>
+                </div>
+                <div
+                  class="problem-detail-card"
+                  id="problemDetailCard"
+                  data-tone="coral"
+                >
+                  <div class="problem-detail-head">
+                    <div class="detail-icon">
+                      <i data-lucide="shield-alert"></i>
+                    </div>
+                    <h3 class="problem-detail-title">Rampant Adulteration</h3>
+                  </div>
+                  <p class="problem-detail-text"></p>
+                  <ul class="problem-detail-points"></ul>
+                  <p class="problem-detail-impact"></p>
+                </div>
+              </div>
+              <div class="network-particle" aria-hidden="true"></div>
+
+              <button
+                class="problem-node"
+                type="button"
+                data-node="adulteration"
+                aria-pressed="false"
+                style="--x: 0px; --y: -148px; --tone-rgb: 239, 124, 119"
+              >
+                <span class="problem-node-icon"
+                  ><i data-lucide="shield-alert"></i
+                ></span>
+                <span class="problem-node-name">Adulteration</span>
+              </button>
+              <button
+                class="problem-node"
+                type="button"
+                data-node="traceability"
+                aria-pressed="false"
+                style="--x: 170px; --y: -70px; --tone-rgb: 125, 181, 230"
+              >
+                <span class="problem-node-icon"
+                  ><i data-lucide="search-slash"></i
+                ></span>
+                <span class="problem-node-name">Traceability</span>
+              </button>
+              <button
+                class="problem-node"
+                type="button"
+                data-node="spoilage"
+                aria-pressed="false"
+                style="--x: 150px; --y: 105px; --tone-rgb: 131, 196, 153"
+              >
+                <span class="problem-node-icon"
+                  ><i data-lucide="trash-2"></i
+                ></span>
+                <span class="problem-node-name">Spoilage</span>
+              </button>
+              <button
+                class="problem-node"
+                type="button"
+                data-node="health"
+                aria-pressed="false"
+                style="--x: 0px; --y: 145px; --tone-rgb: 232, 150, 180"
+              >
+                <span class="problem-node-icon"
+                  ><i data-lucide="heart-pulse"></i
+                ></span>
+                <span class="problem-node-name">Health Risk</span>
+              </button>
+              <button
+                class="problem-node"
+                type="button"
+                data-node="fssai"
+                aria-pressed="false"
+                style="--x: -150px; --y: 105px; --tone-rgb: 231, 190, 117"
+              >
+                <span class="problem-node-icon"
+                  ><i data-lucide="file-x"></i
+                ></span>
+                <span class="problem-node-name">Compliance</span>
+              </button>
+              <button
+                class="problem-node"
+                type="button"
+                data-node="distrust"
+                aria-pressed="false"
+                style="--x: -170px; --y: -70px; --tone-rgb: 190, 162, 226"
+              >
+                <span class="problem-node-icon"
+                  ><i data-lucide="eye-off"></i
+                ></span>
+                <span class="problem-node-name">Distrust</span>
+              </button>
+            </div>
+          </div>
+
+          <p class="problem-hint" data-aos="fade-up" data-aos-delay="200">
+            Tap a node to explore the issue
+          </p>
+        </div>
+      </section>
+
+      <!-- Solution Showcase -->
+      <section id="solution" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold font-montserrat text-slate-800">
+              Solution
+            </h2>
+            <p class="mt-4 max-w-3xl mx-auto text-text-secondary">
+              DudhAmrut connects every stage of the milk journey with real-time
+              quality monitoring, traceability, and intelligent decision-making.
+            </p>
+          </div>
+
+          <div
+            class="solution-full-bleed mt-8"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div class="solution-box">
+              <div class="solution-carousel" style="--marquee-duration: 8s">
+                <div class="solution-track">
+                  <!-- 8 unique slides (primary sequence) -->
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/01-farmer-dairy.jpg"
+                          alt="Farm-Level Milk Production"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">01</span>
+                        <div class="label">Farm-Level Milk Production</div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Ensures productivity, quality, and traceability at the
+                          source of milk production.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/03-milk-analyzer.jpg"
+                          alt="Milk Collection Center"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">02</span>
+                        <div class="label">Milk Collection Center</div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Centralizes collection points for disciplined,
+                          transparent, and efficient milk intake.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/04-milk-testing.jpg"
+                          alt="Milk Collection & Testing Workflow"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">03</span>
+                        <div class="label">
+                          Milk Collection &amp; Testing Workflow
+                        </div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Combines collection, sampling, and testing into one
+                          streamlined workflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/02-milk-collection-center.jpg"
+                          alt="On-Site Quality Testing"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">04</span>
+                        <div class="label">On-Site Quality Testing</div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Verifies animal health, purity, and milk quality at
+                          the point of collection.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/05-dairy-processing-plant.jpg"
+                          alt="Digital Milk Analyzer"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">05</span>
+                        <div class="label">Digital Milk Analyzer</div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Measures critical milk parameters in real time for
+                          faster, smarter decisions.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/06-milk-transport.jpg"
+                          alt="Milk Transportation"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">06</span>
+                        <div class="label">Milk Transportation</div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Secures movement of milk while maintaining cold-chain
+                          integrity and accountability.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/08-dudhamrut-product-qr.jpg"
+                          alt="Dairy Processing Unit"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">07</span>
+                        <div class="label">Dairy Processing Unit</div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Transforms raw milk into a consistent, trusted, and
+                          high-quality dairy product stream.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/07-dairy-retail.jpg"
+                          alt="DudhAmrut Traceability & Consumer Trust"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">08</span>
+                        <div class="label">
+                          DudhAmrut Traceability &amp; Consumer Trust
+                        </div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Delivers transparent farm-to-retail visibility that
+                          builds confidence and loyalty.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- duplicate sequence for smooth right-to-left loop -->
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/01-farmer-dairy.jpg"
+                          alt="Farm-Level Milk Production"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">01</span>
+                        <div class="label">Farm-Level Milk Production</div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Ensures productivity, quality, and traceability at the
+                          source of milk production.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/03-milk-analyzer.jpg"
+                          alt="Milk Collection Center"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">02</span>
+                        <div class="label">Milk Collection Center</div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Centralizes collection points for disciplined,
+                          transparent, and efficient milk intake.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/04-milk-testing.jpg"
+                          alt="Milk Collection & Testing Workflow"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">03</span>
+                        <div class="label">
+                          Milk Collection &amp; Testing Workflow
+                        </div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Combines collection, sampling, and testing into one
+                          streamlined workflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/02-milk-collection-center.jpg"
+                          alt="On-Site Quality Testing"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">04</span>
+                        <div class="label">On-Site Quality Testing</div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Verifies animal health, purity, and milk quality at
+                          the point of collection.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/05-dairy-processing-plant.jpg"
+                          alt="Digital Milk Analyzer"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">05</span>
+                        <div class="label">Digital Milk Analyzer</div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Measures critical milk parameters in real time for
+                          faster, smarter decisions.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/06-milk-transport.jpg"
+                          alt="Milk Transportation"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">06</span>
+                        <div class="label">Milk Transportation</div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Secures movement of milk while maintaining cold-chain
+                          integrity and accountability.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/08-dudhamrut-product-qr.jpg"
+                          alt="Dairy Processing Unit"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">07</span>
+                        <div class="label">Dairy Processing Unit</div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Transforms raw milk into a consistent, trusted, and
+                          high-quality dairy product stream.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="solution-card">
+                    <div class="solution-card-inner">
+                      <div class="solution-image">
+                        <img
+                          src="images/solution/07-dairy-retail.jpg"
+                          alt="DudhAmrut Traceability & Consumer Trust"
+                        />
+                      </div>
+                      <div class="solution-title">
+                        <span class="num">08</span>
+                        <div class="label">
+                          DudhAmrut Traceability &amp; Consumer Trust
+                        </div>
+                      </div>
+                      <div class="solution-desc">
+                        <span class="sol-label">SOLUTION</span>
+                        <div>
+                          Delivers transparent farm-to-retail visibility that
+                          builds confidence and loyalty.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission & Vision Section -->
+      <section
+        id="mission-and-values"
+        class="mission-journey py-20 bg-slate-50"
+      >
+        <div class="container mx-auto px-6">
+          <div class="mission-journey-header" data-aos="fade-up">
+            <p class="section-eyebrow">Mission &amp; Vision</p>
+            <h2>Building a More Trusted Dairy Ecosystem</h2>
+            <p class="mission-section-lead">
+              Technology that connects quality, transparency and intelligence
+              across the dairy value chain.
+            </p>
+          </div>
+
+          <div
+            class="mission-statements"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-reveal="grid"
+          >
+            <article class="mission-statement">
+              <p class="mission-statement-label">Our Mission</p>
+              <h3>
+                Make dairy operations more transparent, connected and
+                data-driven.
+              </h3>
+            </article>
+            <article class="mission-statement">
+              <p class="mission-statement-label">Our Vision</p>
+              <h3>A dairy ecosystem where every drop can be trusted.</h3>
+            </article>
+          </div>
+
+          <div class="mission-pillars" data-aos="fade-up" data-aos-delay="180">
+            <div class="mission-pillars-heading">
+              <p class="section-eyebrow">Our principles</p>
+            </div>
+            <div class="mission-pillar-grid" data-reveal="grid">
+              <article class="mission-pillar">
+                <span>01</span><i data-lucide="flask-conical"></i>
+                <h4>Purity</h4>
+                <p>
+                  Objective milk-quality intelligence from collection to
+                  processing.
+                </p>
+                <ul>
+                  <li>SNF % &amp; FAT %</li>
+                  <li>pH &amp; Temperature</li>
+                  <li>Conductivity &amp; Density</li>
+                  <li>Adulteration Indicators</li>
+                  <li>Freshness Time Logging</li>
+                </ul>
+              </article>
+              <article class="mission-pillar">
+                <span>02</span><i data-lucide="shield-check"></i>
+                <h4>Trust</h4>
+                <p>
+                  Reliable records and traceability across the dairy supply
+                  chain.
+                </p>
+                <ul>
+                  <li>Immutable Blockchain Storage</li>
+                  <li>Consumer QR Verification</li>
+                  <li>Farmer ID Validation</li>
+                  <li>Tamper-Proof Quality Records</li>
+                  <li>Traceable Batch ID</li>
+                </ul>
+              </article>
+              <article class="mission-pillar">
+                <span>03</span><i data-lucide="cpu"></i>
+                <h4>Innovation</h4>
+                <p>
+                  Connected technologies designed for intelligent dairy
+                  operations.
+                </p>
+                <ul>
+                  <li>Real-Time IoT Sensors</li>
+                  <li>Decentralized Blockchain Integration</li>
+                  <li>AI Anomaly Detection</li>
+                  <li>Cloud Analytics Dashboard</li>
+                  <li>Modular &amp; Scalable Design</li>
+                </ul>
+              </article>
+              <article class="mission-pillar">
+                <span>04</span><i data-lucide="leaf"></i>
+                <h4>Sustainability</h4>
+                <p>
+                  Technology focused on reducing operational losses and
+                  improving dairy-system efficiency.
+                </p>
+                <ul>
+                  <li>~80% Spoilage Reduction</li>
+                  <li>Low-Power IoT Devices</li>
+                  <li>Reusable Sensor Probes</li>
+                  <li>+40% Farmer Income Growth</li>
+                  <li>Alignment with SDG 3, 8 &amp; 12</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <div class="mission-closing" data-aos="fade-up" data-aos-delay="240">
+            Purer milk <b>&bull;</b> Greater transparency <b>&bull;</b> Smarter
+            dairy operations
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Features Section -->
+      <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-10" data-aos="fade-up">
+            <h2 class="feature-title font-bold font-montserrat">
+              Key Features
+            </h2>
+            <p class="feature-subtitle mt-5 max-w-3xl mx-auto">
+              Our platform integrates cutting-edge technologies to deliver
+              unparalleled quality and transparency.
+            </p>
+          </div>
+          <div
+            class="feature-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          >
+            <div
+              class="feature-card feature-activate rounded-xl p-6 text-center"
+            >
+              <div class="inline-block bg-sky-100 p-3 rounded-full mb-4">
+                <i data-lucide="thermometer" class="w-8 h-8 text-sky-500"></i>
+              </div>
+              <h3 class="font-bold text-lg mb-2">
+                Real-time Quality Monitoring
+              </h3>
+              <p class="text-sm text-text-secondary">
+                Measures temperature, pH, and purity.
+              </p>
+            </div>
+            <div
+              class="feature-card feature-activate rounded-xl p-6 text-center"
+            >
+              <div class="inline-block bg-green-100 p-3 rounded-full mb-4">
+                <i data-lucide="lock" class="w-8 h-8 text-green-500"></i>
+              </div>
+              <h3 class="font-bold text-lg mb-2">Blockchain Data Security</h3>
+              <p class="text-sm text-text-secondary">
+                Immutable records for every milk batch.
+              </p>
+            </div>
+            <div
+              class="feature-card feature-activate rounded-xl p-6 text-center"
+            >
+              <div class="inline-block bg-yellow-100 p-3 rounded-full mb-4">
+                <i data-lucide="qr-code" class="w-8 h-8 text-yellow-500"></i>
+              </div>
+              <h3 class="font-bold text-lg mb-2">
+                QR-Based Consumer Transparency
+              </h3>
+              <p class="text-sm text-text-secondary">
+                Scan to view the verified journey.
+              </p>
+            </div>
+            <div
+              class="feature-card feature-activate rounded-xl p-6 text-center"
+            >
+              <div class="inline-block bg-sky-100 p-3 rounded-full mb-4">
+                <i data-lucide="user-check" class="w-8 h-8 text-sky-500"></i>
+              </div>
+              <h3 class="font-bold text-lg mb-2">Farmer Authentication</h3>
+              <p class="text-sm text-text-secondary">
+                Verifies sources for accountability.
+              </p>
+            </div>
+            <div
+              class="feature-card feature-activate rounded-xl p-6 text-center"
+            >
+              <div class="inline-block bg-red-100 p-3 rounded-full mb-4">
+                <i data-lucide="siren" class="w-8 h-8 text-red-500"></i>
+              </div>
+              <h3 class="font-bold text-lg mb-2">Automated Spoilage Alerts</h3>
+              <p class="text-sm text-text-secondary">
+                Instant notifications to reduce wastage.
+              </p>
+            </div>
+            <div
+              class="feature-card feature-activate rounded-xl p-6 text-center"
+            >
+              <div class="inline-block bg-green-100 p-3 rounded-full mb-4">
+                <i
+                  data-lucide="clipboard-check"
+                  class="w-8 h-8 text-green-500"
+                ></i>
+              </div>
+              <h3 class="font-bold text-lg mb-2">FSSAI Compliance Dashboard</h3>
+              <p class="text-sm text-text-secondary">
+                Real-time compliance reporting.
+              </p>
+            </div>
+            <div
+              class="feature-card feature-activate rounded-xl p-6 text-center"
+            >
+              <div class="inline-block bg-sky-100 p-3 rounded-full mb-4">
+                <i data-lucide="cloud" class="w-8 h-8 text-sky-500"></i>
+              </div>
+              <h3 class="font-bold text-lg mb-2">Cloud Analytics</h3>
+              <p class="text-sm text-text-secondary">
+                Enables data-driven optimization.
+              </p>
+            </div>
+            <div
+              class="feature-card feature-activate rounded-xl p-6 text-center"
+            >
+              <div class="inline-block bg-yellow-100 p-3 rounded-full mb-4">
+                <i
+                  data-lucide="brain-circuit"
+                  class="w-8 h-8 text-yellow-500"
+                ></i>
+              </div>
+              <h3 class="font-bold text-lg mb-2">AI Predictions</h3>
+              <p class="text-sm text-text-secondary">
+                Predicts potential spoilage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- System Architecture Section (MOVED & RENAMED) -->
+      <section id="architecture" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold font-montserrat text-slate-800">
+              System Architecture
+            </h2>
+            <!-- Simplified Title -->
+            <p class="mt-4 max-w-2xl mx-auto text-text-secondary">
+              A high-level overview of our data flow, from farm to consumer.
+            </p>
+            <!-- Updated Subtitle -->
+          </div>
+
+          <!-- NEW: Visual Architecture Flow -->
+          <div class="max-w-5xl mx-auto" data-aos="fade-up">
+            <div
+              class="flex flex-col md:flex-row items-center justify-between gap-8 text-center"
+            >
+              <!-- Step 1: Input -->
+              <div class="flex flex-col items-center p-4">
+                <div
+                  class="flex items-center justify-center bg-white rounded-full w-24 h-24 shadow-lg border-2 border-emerald-100"
+                >
+                  <i data-lucide="cpu" class="w-12 h-12 text-emerald-700"></i>
+                </div>
+                <h3 class="mt-4 font-semibold text-lg">1. Data Collection</h3>
+                <p class="text-sm text-text-secondary">
+                  IoT sensors test milk & farmer data is collected.
+                </p>
+              </div>
+
+              <!-- Arrow -->
+              <div class="hidden md:block">
+                <i
+                  data-lucide="arrow-right"
+                  class="w-16 h-16 text-slate-300"
+                ></i>
+              </div>
+              <div class="block md:hidden">
+                <i
+                  data-lucide="arrow-down"
+                  class="w-12 h-12 text-slate-300"
+                ></i>
+              </div>
+
+              <!-- Step 2: Processing -->
+              <div class="flex flex-col items-center p-4">
+                <div
+                  class="flex items-center justify-center bg-white rounded-full w-24 h-24 shadow-lg border-2 border-emerald-100"
+                >
+                  <i data-lucide="cloud" class="w-12 h-12 text-emerald-700"></i>
+                </div>
+                <h3 class="mt-4 font-semibold text-lg">2. Secure Gateway</h3>
+                <p class="text-sm text-text-secondary">
+                  Data is sent to the cloud for processing & analysis.
+                </p>
+              </div>
+
+              <!-- Arrow -->
+              <div class="hidden md:block">
+                <i
+                  data-lucide="arrow-right"
+                  class="w-16 h-16 text-slate-300"
+                ></i>
+              </div>
+              <div class="block md:hidden">
+                <i
+                  data-lucide="arrow-down"
+                  class="w-12 h-12 text-slate-300"
+                ></i>
+              </div>
+
+              <!-- Step 3: Storage -->
+              <div class="flex flex-col items-center p-4">
+                <div
+                  class="flex items-center justify-center bg-white rounded-full w-24 h-24 shadow-lg border-2 border-green-100"
+                >
+                  <i data-lucide="link" class="w-12 h-12 text-green-500"></i>
+                </div>
+                <h3 class="mt-4 font-semibold text-lg">
+                  3. Blockchain Storage
+                </h3>
+                <p class="text-sm text-text-secondary">
+                  Verified data is stored immutably on the Blockchain.
+                </p>
+              </div>
+
+              <!-- Arrow -->
+              <div class="hidden md:block">
+                <i
+                  data-lucide="arrow-right"
+                  class="w-16 h-16 text-slate-300"
+                ></i>
+              </div>
+              <div class="block md:hidden">
+                <i
+                  data-lucide="arrow-down"
+                  class="w-12 h-12 text-slate-300"
+                ></i>
+              </div>
+
+              <!-- Step 4: Application -->
+              <div class="flex flex-col items-center p-4">
+                <div
+                  class="flex items-center justify-center bg-white rounded-full w-24 h-24 shadow-lg border-2 border-yellow-100"
+                >
+                  <i
+                    data-lucide="qr-code"
+                    class="w-12 h-12 text-yellow-500"
+                  ></i>
+                </div>
+                <h3 class="mt-4 font-semibold text-lg">4. Consumer Access</h3>
+                <p class="text-sm text-text-secondary">
+                  Consumers scan a QR code to see the full, trusted report.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END: Visual Architecture Flow -->
+
+          <div class="hidden" aria-hidden="true">
+            <div>
+              <h3 class="text-2xl font-bold text-slate-700 mb-8 text-center">
+                Our Technology Stack
+              </h3>
+              <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-8">
+                <div
+                  class="text-center group p-4 rounded-lg transition hover:bg-slate-100"
+                >
+                  <i
+                    data-lucide="cpu"
+                    class="w-14 h-14 mx-auto text-slate-400 group-hover:text-emerald-600 transition"
+                  ></i>
+                  <p class="mt-2 font-semibold text-sm">IoT Sensors</p>
+                  <p class="text-xs text-slate-400">RS-232 / Bluetooth</p>
+                </div>
+                <div
+                  class="text-center group p-4 rounded-lg transition hover:bg-slate-100"
+                >
+                  <i
+                    data-lucide="activity"
+                    class="w-14 h-14 mx-auto text-slate-400 group-hover:text-emerald-600 transition"
+                  ></i>
+                  <p class="mt-2 font-semibold text-sm">Milk Analyzers</p>
+                  <p class="text-xs text-slate-400">
+                    LACTOSCAN · Gerber · Ultrasonic
+                  </p>
+                </div>
+                <div
+                  class="text-center group p-4 rounded-lg transition hover:bg-slate-100"
+                >
+                  <i
+                    data-lucide="cloud"
+                    class="w-14 h-14 mx-auto text-slate-400 group-hover:text-emerald-600 transition"
+                  ></i>
+                  <p class="mt-2 font-semibold text-sm">Cloud Infrastructure</p>
+                  <p class="text-xs text-slate-400">Real-time data layer</p>
+                </div>
+                <div
+                  class="text-center group p-4 rounded-lg transition hover:bg-slate-100"
+                >
+                  <i
+                    data-lucide="brain"
+                    class="w-14 h-14 mx-auto text-slate-400 group-hover:text-emerald-600 transition"
+                  ></i>
+                  <p class="mt-2 font-semibold text-sm">AI Anomaly Detection</p>
+                  <p class="text-xs text-slate-400">Rule-based + ML roadmap</p>
+                </div>
+                <div
+                  class="text-center group p-4 rounded-lg transition hover:bg-slate-100"
+                >
+                  <i
+                    data-lucide="shield-check"
+                    class="w-14 h-14 mx-auto text-slate-400 group-hover:text-emerald-600 transition"
+                  ></i>
+                  <p class="mt-2 font-semibold text-sm">
+                    Tamper-Evident Ledger
+                  </p>
+                  <p class="text-xs text-slate-400">
+                    Cryptographic audit trail
+                  </p>
+                </div>
+                <div
+                  class="text-center group p-4 rounded-lg transition hover:bg-slate-100"
+                >
+                  <i
+                    data-lucide="qr-code"
+                    class="w-14 h-14 mx-auto text-slate-400 group-hover:text-emerald-600 transition"
+                  ></i>
+                  <p class="mt-2 font-semibold text-sm">QR Traceability</p>
+                  <p class="text-xs text-slate-400">
+                    No login · Consumer-ready
+                  </p>
+                </div>
+                <div
+                  class="text-center group p-4 rounded-lg transition hover:bg-slate-100"
+                >
+                  <i
+                    data-lucide="clipboard-check"
+                    class="w-14 h-14 mx-auto text-slate-400 group-hover:text-emerald-600 transition"
+                  ></i>
+                  <p class="mt-2 font-semibold text-sm">FSSAI FoSCoS API</p>
+                  <p class="text-xs text-slate-400">
+                    Recall compliance built-in
+                  </p>
+                </div>
+                <div
+                  class="text-center group p-4 rounded-lg transition hover:bg-slate-100"
+                >
+                  <i
+                    data-lucide="layout-dashboard"
+                    class="w-14 h-14 mx-auto text-slate-400 group-hover:text-emerald-600 transition"
+                  ></i>
+                  <p class="mt-2 font-semibold text-sm">
+                    Role-Based Dashboards
+                  </p>
+                  <p class="text-xs text-slate-400">Web + Mobile · 7 modules</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Evidence Section -->
+      <section id="evidence" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="max-w-3xl mb-12" data-aos="fade-up">
+            <p class="section-eyebrow">Validation / evidence</p>
+            <h2 class="mt-3 text-3xl font-bold font-montserrat text-slate-800">
+              Built around the realities of dairy operations.
+            </h2>
+            <p class="mt-5 text-lg text-text-secondary">
+              DudhAmrut's development is grounded in field visits, testing,
+              prototype work, and conversations with the dairy ecosystem. These
+              images document the work behind the platform.
+            </p>
+          </div>
+          <div
+            class="evidence-grid"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-reveal="grid"
+          >
+            <figure class="evidence-card">
+              <img
+                src="images/evidence/origin-bawada.jpg"
+                alt="DudhAmrut project origin and dairy context in Bawada"
+                loading="lazy"
+              />
+              <figcaption>
+                Origin / Bawada<small
+                  >Understanding the operating context at the source.</small
+                >
+              </figcaption>
+            </figure>
+            <figure class="evidence-card">
+              <img
+                src="images/evidence/lab-testing.jpeg"
+                alt="DudhAmrut lab testing activity"
+                loading="lazy"
+              />
+              <figcaption>
+                Lab testing<small
+                  >Quality work documented during development.</small
+                >
+              </figcaption>
+            </figure>
+            <figure class="evidence-card">
+              <img
+                src="images/evidence/chemical-testing.jpeg"
+                alt="DudhAmrut chemical testing activity"
+                loading="lazy"
+              />
+              <figcaption>
+                Chemical testing<small
+                  >Investigating quality and adulteration signals.</small
+                >
+              </figcaption>
+            </figure>
+            <figure class="evidence-card">
+              <img
+                src="images/evidence/iot-prototype.jpeg"
+                alt="DudhAmrut IoT prototype"
+                loading="lazy"
+              />
+              <figcaption>
+                IoT prototype<small
+                  >Connecting measurement to usable data.</small
+                >
+              </figcaption>
+            </figure>
+            <figure class="evidence-card">
+              <img
+                src="images/evidence/coe-meeting.jpg"
+                alt="DudhAmrut meeting at the Centre of Excellence in Dairy"
+                loading="lazy"
+              />
+              <figcaption>
+                CoE Dairy engagement<small
+                  >Learning with dairy stakeholders and institutions.</small
+                >
+              </figcaption>
+            </figure>
+          </div>
+          <div class="evidence-meta" data-aos="fade-up" data-aos-delay="180">
+            <div class="evidence-stat">
+              <strong>Field context</strong
+              ><span
+                >Origin, dairy operations, and stakeholder conversations</span
+              >
+            </div>
+            <div class="evidence-stat">
+              <strong>Testing work</strong
+              ><span
+                >Lab and chemical testing documented in the project record</span
+              >
+            </div>
+            <div class="evidence-stat">
+              <strong>Prototype work</strong
+              ><span
+                >IoT-enabled quality monitoring explored through physical
+                prototypes</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Modules Section -->
+      <section id="innovation" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="max-w-3xl mb-12" data-aos="fade-up">
+            <p class="section-eyebrow">Platform architecture</p>
+            <h2 class="mt-3 text-3xl font-bold font-montserrat text-slate-800">
+              End-to-End Dairy Supply Chain
+            </h2>
+            <p class="mt-4 text-lg text-text-secondary">
+              Seven integrated modules connecting milk collection, quality,
+              operations, logistics, distribution, and consumer traceability on
+              one unified platform.
+            </p>
+          </div>
+          <div
+            class="core-modules-grid"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-reveal="grid"
+          >
+            <article
+              class="core-module"
+              style="
+                --module-color: #0f9f78;
+                --module-soft: rgba(15, 159, 120, 0.12);
+              "
+            >
+              <div class="core-module-icon"><i data-lucide="sprout"></i></div>
+              <h3>01 &mdash; Farmer Portal</h3>
+              <p>
+                Empowering farmers with digital milk collection, transparent
+                payments, livestock records, and AI-enabled insights.
+              </p>
+              <div class="core-module-tags">
+                <span>Digital registration</span><span>Collection records</span
+                ><span>Payment visibility</span><span>Livestock insights</span>
+              </div>
+              <a class="core-module-action" href="#demo"
+                >Explore Module <i data-lucide="arrow-up-right"></i
+              ></a>
+            </article>
+            <article
+              class="core-module"
+              style="
+                --module-color: #218ad4;
+                --module-soft: rgba(33, 138, 212, 0.12);
+              "
+            >
+              <div class="core-module-icon">
+                <i data-lucide="scan-line"></i>
+              </div>
+              <h3>02 &mdash; Collection Centre</h3>
+              <p>
+                Digitizing milk procurement with farmer identification,
+                automated quality testing, and real-time data synchronization.
+              </p>
+              <div class="core-module-tags">
+                <span>RFID / QR identification</span
+                ><span>FAT / SNF testing</span><span>Quality checks</span
+                ><span>Payment calculation</span>
+              </div>
+              <a class="core-module-action" href="#demo"
+                >Explore Module <i data-lucide="arrow-up-right"></i
+              ></a>
+            </article>
+            <article
+              class="core-module"
+              style="
+                --module-color: #7654e8;
+                --module-soft: rgba(118, 84, 232, 0.12);
+              "
+            >
+              <div class="core-module-icon">
+                <i data-lucide="thermometer-snowflake"></i>
+              </div>
+              <h3>03 &mdash; Storage &amp; Quality</h3>
+              <p>
+                Protecting milk quality through connected cold-chain monitoring,
+                spoilage alerts, and compliance visibility.
+              </p>
+              <div class="core-module-tags">
+                <span>Temperature monitoring</span><span>Spoilage alerts</span
+                ><span>Cold-chain</span><span>Compliance tracking</span>
+              </div>
+              <a class="core-module-action" href="#demo"
+                >Explore Module <i data-lucide="arrow-up-right"></i
+              ></a>
+            </article>
+            <article
+              class="core-module"
+              style="
+                --module-color: #ee7800;
+                --module-soft: rgba(238, 120, 0, 0.12);
+              "
+            >
+              <div class="core-module-icon"><i data-lucide="factory"></i></div>
+              <h3>04 &mdash; Processing Unit</h3>
+              <p>
+                Managing production batches with digital traceability, yield
+                monitoring, and QR-enabled product identification.
+              </p>
+              <div class="core-module-tags">
+                <span>Batch creation</span><span>Product mapping</span
+                ><span>Yield tracking</span><span>QR traceability</span>
+              </div>
+              <a class="core-module-action" href="#demo"
+                >Explore Module <i data-lucide="arrow-up-right"></i
+              ></a>
+            </article>
+            <article
+              class="core-module"
+              style="
+                --module-color: #ed2c69;
+                --module-soft: rgba(237, 44, 105, 0.12);
+              "
+            >
+              <div class="core-module-icon"><i data-lucide="truck"></i></div>
+              <h3>05 &mdash; Transport &amp; Logistics</h3>
+              <p>
+                Maintaining cold-chain visibility from processing to delivery
+                through connected logistics monitoring.
+              </p>
+              <div class="core-module-tags">
+                <span>GPS tracking</span><span>Temperature monitoring</span
+                ><span>Route optimization</span
+                ><span>Delivery verification</span>
+              </div>
+              <a class="core-module-action" href="#demo"
+                >Explore Module <i data-lucide="arrow-up-right"></i
+              ></a>
+            </article>
+            <article
+              class="core-module"
+              style="
+                --module-color: #2eaf36;
+                --module-soft: rgba(46, 175, 54, 0.12);
+              "
+            >
+              <div class="core-module-icon"><i data-lucide="boxes"></i></div>
+              <h3>06 &mdash; Distributor &amp; Retail</h3>
+              <p>
+                Enabling smarter inventory operations with batch-level
+                visibility, expiry control, and sales intelligence.
+              </p>
+              <div class="core-module-tags">
+                <span>Batch inventory</span><span>FIFO management</span
+                ><span>Expiry tracking</span><span>Sales analytics</span>
+              </div>
+              <a class="core-module-action" href="#demo"
+                >Explore Module <i data-lucide="arrow-up-right"></i
+              ></a>
+            </article>
+            <article
+              class="core-module"
+              style="
+                --module-color: #168ee8;
+                --module-soft: rgba(22, 142, 232, 0.12);
+              "
+            >
+              <div class="core-module-icon">
+                <i data-lucide="shopping-cart"></i>
+              </div>
+              <h3>07 &mdash; Consumer Traceability</h3>
+              <p>
+                Giving consumers direct access to verified product information
+                through a simple, transparent digital experience.
+              </p>
+              <div class="core-module-tags">
+                <span>QR traceability</span><span>Farm-to-pack timeline</span
+                ><span>Safety information</span><span>Batch verification</span>
+              </div>
+              <a class="core-module-action" href="#demo"
+                >Explore Module <i data-lucide="arrow-up-right"></i
+              ></a>
+            </article>
+            <article
+              class="core-module command-module"
+              style="
+                --module-color: #e2a967;
+                --module-soft: rgba(226, 169, 103, 0.14);
+              "
+            >
+              <div class="core-module-icon">
+                <i data-lucide="layout-dashboard"></i>
+              </div>
+              <div>
+                <h3 style="color: white">
+                  Command Layer &mdash; Admin Command Center
+                </h3>
+                <p>
+                  A unified control layer providing end-to-end visibility across
+                  the dairy ecosystem.
+                </p>
+                <div class="core-module-tags">
+                  <span>Live supply-chain dashboard</span
+                  ><span>Fraud &amp; anomaly detection</span
+                  ><span>Role &amp; access management</span
+                  ><span>Compliance &amp; audit monitoring</span>
+                </div>
+              </div>
+              <a class="core-module-action" href="#demo"
+                >Explore Command Center <i data-lucide="arrow-up-right"></i
+              ></a>
+            </article>
+          </div>
+          <div
+            class="data-layer-banner"
+            data-aos="fade-up"
+            data-aos-delay="180"
+          >
+            <div>
+              <strong>Connected by One Data Layer</strong
+              ><span>One connected platform. One trusted source of truth.</span>
+            </div>
+            <div class="data-layer-flow">
+              Farmer <b>&rarr;</b> Collection Centre <b>&rarr;</b> Storage
+              <b>&rarr;</b> Processing <b>&rarr;</b> Transport
+              <b>&rarr;</b> Distributor / Retail <b>&rarr;</b> Consumer
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Measurable Impact Section -->
+      <section id="impact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold font-montserrat text-slate-800">
+              Measurable Impact
+            </h2>
+            <p class="mt-4 max-w-2xl mx-auto text-text-secondary">
+              Our system delivers tangible benefits, enhancing safety,
+              empowering farmers, and reducing waste.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+            data-aos="fade-up"
+          >
+            <div class="text-center">
+              <p
+                class="text-5xl font-bold text-emerald-800 leading-none"
+                data-counter="260"
+                data-suffix="+"
+              >
+                260+
+              </p>
+              <p class="mt-3 text-text-secondary">Dairy Operators Engaged</p>
+            </div>
+            <div class="text-center">
+              <p
+                class="text-5xl font-bold text-emerald-800 leading-none"
+                data-counter="20"
+                data-suffix="+"
+              >
+                20+
+              </p>
+              <p class="mt-3 text-text-secondary">
+                Maharashtra Districts Covered
+              </p>
+            </div>
+            <div class="text-center">
+              <p
+                class="text-5xl font-bold text-emerald-800 leading-none"
+                data-counter="4"
+              >
+                4
+              </p>
+              <p class="mt-3 text-text-secondary">Pilot Sites with LOIs</p>
+            </div>
+            <div class="text-center">
+              <p
+                class="text-5xl font-bold text-emerald-800 leading-none"
+                data-counter="10000"
+                data-suffix="+"
+              >
+                10000+
+              </p>
+              <p class="mt-3 text-text-secondary">
+                Farmers &amp; Consumers Reached
+              </p>
+            </div>
+            <div class="text-center">
+              <p
+                class="text-5xl font-bold text-emerald-800 leading-none"
+                data-counter="4"
+                data-suffix=" months"
+              >
+                4 months
+              </p>
+              <p class="mt-3 text-text-secondary">
+                Live Operational Data Stored
+              </p>
+            </div>
+            <div class="text-center">
+              <p
+                class="text-5xl font-bold text-emerald-800 leading-none"
+                data-counter="7"
+              >
+                7
+              </p>
+              <p class="mt-3 text-text-secondary">
+                Integrated Platform Modules
+              </p>
+            </div>
+          </div>
+          <div
+            class="field-strip"
+            data-aos="fade-up"
+            data-aos-delay="120"
+            data-reveal="grid"
+          >
+            <figure>
+              <img
+                src="images/traction/pilot-coe-dairy.jpg"
+                alt="DudhAmrut activity at the Centre of Excellence in Dairy"
+                loading="lazy"
+              />
+              <figcaption>
+                CoE Dairy activity<span
+                  >Field context for quality and workflow validation</span
+                >
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="images/traction/food-safety-officer.jpeg"
+                alt="DudhAmrut team with a food safety officer"
+                loading="lazy"
+              />
+              <figcaption>
+                Food safety dialogue<span
+                  >Stakeholder interaction around milk quality</span
+                >
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="images/traction/with-farmers.jpeg"
+                alt="DudhAmrut exhibition booth"
+                loading="lazy"
+              />
+              <figcaption>
+                Exhibition engagement<span
+                  >Sharing the platform with the dairy ecosystem</span
+                >
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Journey Section -->
+      <section id="journey" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <p
+              class="text-sm font-bold uppercase tracking-widest text-emerald-600"
+            >
+              Our Journey
+            </p>
+            <h2 class="mt-3 text-3xl font-bold font-montserrat text-slate-800">
+              From Field Insight to Dairy Innovation
+            </h2>
+            <p class="mt-4 max-w-2xl mx-auto text-text-secondary">
+              A focused timeline of the milestones that shaped DudhAmrut.
+            </p>
+          </div>
+
+          <div
+            class="journey-timeline max-w-6xl mx-auto"
+            aria-label="DudhAmrut journey milestones"
+          >
+            <article
+              class="journey-item journey-item--image-left"
+              data-journey-index="0"
+            >
+              <figure class="journey-media">
+                <img
+                  class="journey-image"
+                  src="images/journey/coe-dairy-visit.jpg"
+                  alt="DudhAmrut team during COE Dairy visit"
+                  loading="lazy"
+                />
+              </figure>
+              <span class="journey-marker" aria-hidden="true"></span>
+              <div class="journey-content">
+                <span class="journey-number">01</span>
+                <h3 class="text-2xl font-bold font-montserrat text-slate-800">
+                  COE Dairy Visit
+                </h3>
+                <p class="mt-4 text-text-secondary leading-relaxed">
+                  An important early field exposure that helped our team
+                  understand real-world dairy operations, milk handling, quality
+                  monitoring, and practical challenges within the dairy
+                  ecosystem.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="journey-item journey-item--image-right"
+              data-journey-index="1"
+            >
+              <figure class="journey-media">
+                <img
+                  class="journey-image journey-image--avishkar"
+                  src="images/journey/avishkar-university-level.jpg"
+                  alt="DudhAmrut presentation at Avishkar University Level"
+                  loading="lazy"
+                />
+              </figure>
+              <span class="journey-marker" aria-hidden="true"></span>
+              <div class="journey-content">
+                <span class="journey-number">02</span>
+                <h3 class="text-2xl font-bold font-montserrat text-slate-800">
+                  Avishkar &mdash; University Level
+                </h3>
+                <p class="mt-4 text-text-secondary leading-relaxed">
+                  DudhAmrut progressed through the University Level of Avishkar,
+                  marking an important milestone in the project&rsquo;s research
+                  and innovation journey.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="journey-item journey-item--image-left"
+              data-journey-index="2"
+            >
+              <figure class="journey-media">
+                <img
+                  class="journey-image"
+                  src="images/journey/kvk-exhibition.jpg"
+                  alt="DudhAmrut team showcasing at the KVK Exhibition"
+                  loading="lazy"
+                />
+              </figure>
+              <span class="journey-marker" aria-hidden="true"></span>
+              <div class="journey-content">
+                <span class="journey-number">03</span>
+                <h3 class="text-2xl font-bold font-montserrat text-slate-800">
+                  KVK Exhibition &mdash; 8 Days
+                </h3>
+                <p class="mt-4 text-text-secondary leading-relaxed">
+                  Over eight days, the team showcased DudhAmrut, interacted with
+                  visitors, gathered feedback, and gained valuable real-world
+                  exposure.
+                </p>
+                <p class="mt-3 text-text-secondary leading-relaxed">
+                  Over 8 days, the team showcased DudhAmrut at Krushak 2026,
+                  Baramati, where we interacted with over 260 dairies from more
+                  than 20 districts across Maharashtra.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="journey-item journey-item--image-right"
+              data-journey-index="3"
+            >
+              <figure class="journey-media">
+                <img
+                  class="journey-image"
+                  src="images/journey/cretechnova-2k26.jpg"
+                  alt="DudhAmrut team at CRETECHNOVA 2K26"
+                  loading="lazy"
+                />
+              </figure>
+              <span class="journey-marker" aria-hidden="true"></span>
+              <div class="journey-content">
+                <span class="journey-number">04</span>
+                <span class="journey-prize"
+                  >&#127942; 1st Prize &mdash; Project Competition</span
+                >
+                <h3
+                  class="mt-4 text-2xl font-bold font-montserrat text-slate-800"
+                >
+                  CRETECHNOVA 2K26
+                </h3>
+                <p class="mt-4 text-text-secondary leading-relaxed">
+                  DudhAmrut achieved
+                  <strong class="text-slate-800">1st Prize</strong> in the
+                  National-Level Project Competition held at our college.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="journey-item journey-item--image-left"
+              data-journey-index="4"
+            >
+              <figure class="journey-media">
+                <img
+                  class="journey-image journey-image--chapters"
+                  src="images/journey/chapters-ait-pune.jpg"
+                  alt="DudhAmrut team presenting at Chapters event at AIT Pune"
+                  loading="lazy"
+                />
+              </figure>
+              <span class="journey-marker" aria-hidden="true"></span>
+              <div class="journey-content">
+                <span class="journey-number">05</span>
+                <span class="journey-prize"
+                  >&#127942; 2nd Prize &mdash; Case Competition</span
+                >
+                <h3
+                  class="mt-4 text-2xl font-bold font-montserrat text-slate-800"
+                >
+                  Chapters &mdash; E-Cell IIT Bombay at AIT Pune
+                </h3>
+                <p class="mt-4 text-text-secondary leading-relaxed">
+                  DudhAmrut secured 2nd Prize in the Case Competition at the
+                  Chapters event organized by E-Cell IIT Bombay at Army
+                  Institute of Technology, Pune.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research & SDG Alignment Section -->
+      <section id="research-sdg" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold font-montserrat text-slate-800">
+              Research & SDG Alignment
+            </h2>
+            <p class="mt-4 max-w-2xl mx-auto text-text-secondary">
+              Our project is grounded in research and aligned with global
+              sustainable development goals.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div
+              class="award-badge flex flex-col items-center justify-center text-center p-6 rounded-lg h-full"
+              data-aos="fade-up"
+              data-aos-delay="0"
+            >
+              <i
+                data-lucide="heart-pulse"
+                class="w-12 h-12 text-red-500 mb-3 transition"
+              ></i>
+              <h3 class="font-semibold">SDG 3: Good Health</h3>
+              <p class="text-sm award-badge-text text-text-secondary mt-1">
+                Ensuring safe, unadulterated milk for consumer well-being.
+              </p>
+            </div>
+            <div
+              class="award-badge flex flex-col items-center justify-center text-center p-6 rounded-lg h-full"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <i
+                data-lucide="bar-chart-3"
+                class="w-12 h-12 text-sky-500 mb-3 transition"
+              ></i>
+              <h3 class="font-semibold">SDG 8: Decent Work</h3>
+              <p class="text-sm award-badge-text text-text-secondary mt-1">
+                Promoting fair pricing and economic growth for farmers.
+              </p>
+            </div>
+            <div
+              class="award-badge flex flex-col items-center justify-center text-center p-6 rounded-lg h-full"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <i
+                data-lucide="recycle"
+                class="w-12 h-12 text-green-500 mb-3 transition"
+              ></i>
+              <h3 class="font-semibold">SDG 12: Responsible Consumption</h3>
+              <p class="text-sm award-badge-text text-text-secondary mt-1">
+                Reducing spoilage and creating a sustainable supply chain.
+              </p>
+            </div>
+            <div
+              class="award-badge flex flex-col items-center justify-center text-center p-6 rounded-lg h-full"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <i
+                data-lucide="clipboard-check"
+                class="w-12 h-12 text-yellow-500 mb-3 transition"
+              ></i>
+              <h3 class="font-semibold">FSSAI Validation</h3>
+              <p class="text-sm award-badge-text text-text-secondary mt-1">
+                System built to meet and exceed FSSAI quality standards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="market" class="market-section py-20">
+        <div class="container mx-auto px-6">
+          <div class="market-visual">
+            <div data-aos="fade-right">
+              <p class="market-kicker">Market context</p>
+              <h2 class="mt-3 font-bold">
+                Designed for dairy realities across Maharashtra.
+              </h2>
+              <p class="mt-5 text-lg">
+                DudhAmrut is rooted in the dairy ecosystem around Malegaon and
+                Baramati, with field activity and engagement extending across
+                Maharashtra.
+              </p>
+              <div class="market-points" data-reveal="grid">
+                <div class="market-point">
+                  <i data-lucide="map-pin"></i
+                  ><span
+                    >20+ Maharashtra districts referenced in the existing
+                    project impact data.</span
+                  >
+                </div>
+                <div class="market-point">
+                  <i data-lucide="building-2"></i
+                  ><span
+                    >260+ dairy operators engaged through the documented field
+                    journey.</span
+                  >
+                </div>
+                <div class="market-point">
+                  <i data-lucide="route"></i
+                  ><span
+                    >A connected data layer for collection, testing, processing,
+                    transport, and consumer trust.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <figure class="market-map" data-aos="fade-left">
+              <img
+                src="images/market/maharashtra-heatmap.png"
+                alt="Maharashtra market and coverage heatmap"
+                loading="lazy"
+              />
+              <figcaption class="sr-only">
+                Maharashtra coverage context
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Business Model Section -->
+      <section id="business-model" class="business-model-section py-20">
+        <div class="container mx-auto px-6">
+          <div class="business-model-intro" data-aos="fade-up">
+            <p class="section-eyebrow">Business Model</p>
+            <h2 class="mt-3 font-bold">
+              Hardware Opens the Door. Software Creates the Revenue.
+            </h2>
+            <p>
+              A recurring-revenue model combining dairy SaaS subscriptions,
+              collection-centre subscriptions, IoT-enabled monitoring, and
+              regulatory compliance services.
+            </p>
+          </div>
+          <div class="business-model-grid">
+            <article
+              class="business-card is-primary"
+              data-aos="fade-up"
+              data-aos-delay="0"
+            >
+              <span class="business-card-number">PLAN 01</span>
+              <span class="business-card-category">Recurring SaaS</span>
+              <h3>Dairy Platform</h3>
+              <div class="business-price">₹75K &ndash; ₹1.5L</div>
+              <div class="business-price-unit">/ month</div>
+              <p class="business-target">
+                For mid-scale dairies managing 50&ndash;200 collection centers
+              </p>
+              <ul class="business-includes">
+                <li>All 8 modules included</li>
+                <li>Unlimited collection centers</li>
+                <li>Quality + Operations + Traceability + Analytics</li>
+              </ul>
+              <a class="business-card-action" href="#demo"
+                >Explore Platform <i data-lucide="arrow-up-right"></i
+              ></a>
+            </article>
+
+            <article
+              class="business-card"
+              data-aos="fade-up"
+              data-aos-delay="80"
+            >
+              <span class="business-card-number">PLAN 02</span>
+              <span class="business-card-category">Recurring SaaS</span>
+              <h3>MCC Subscription</h3>
+              <div class="business-price">₹1,500</div>
+              <div class="business-price-unit">/ MCC / month</div>
+              <p class="business-target">
+                For standalone milk collection centers
+              </p>
+              <ul class="business-includes">
+                <li>Digital collection records</li>
+                <li>Quality monitoring</li>
+                <li>Farmer payment system</li>
+              </ul>
+              <a class="business-card-action" href="#demo"
+                >Explore MCC <i data-lucide="arrow-up-right"></i
+              ></a>
+            </article>
+
+            <article
+              class="business-card"
+              data-aos="fade-up"
+              data-aos-delay="160"
+            >
+              <span class="business-card-number">PLAN 03</span>
+              <span class="business-card-category">Hardware + Software</span>
+              <h3>IoT Monitoring</h3>
+              <div class="business-price">₹3,000</div>
+              <div class="business-price-unit">
+                one-time device<br />+ ₹1,500 / month
+              </div>
+              <p class="business-target">
+                Connected monitoring for dairy equipment and environments
+              </p>
+              <ul class="business-includes">
+                <li>Sensor integration</li>
+                <li>Temperature monitoring</li>
+                <li>Equipment interfacing</li>
+              </ul>
+              <a class="business-card-action" href="#demo"
+                >Explore IoT <i data-lucide="arrow-up-right"></i
+              ></a>
+            </article>
+
+            <article
+              class="business-card"
+              data-aos="fade-up"
+              data-aos-delay="240"
+            >
+              <span class="business-card-number">PLAN 04</span>
+              <span class="business-card-category">Regulatory</span>
+              <h3>Compliance Module</h3>
+              <div class="business-price">₹20,000</div>
+              <div class="business-price-unit">/ month</div>
+              <p class="business-target">
+                For digital FSSAI FoSCoS recall and compliance workflows
+              </p>
+              <ul class="business-includes">
+                <li>Batch recall reporting</li>
+                <li>Audit documentation</li>
+                <li>FoSCoS integration</li>
+              </ul>
+              <a class="business-card-action" href="#demo"
+                >Explore Compliance <i data-lucide="arrow-up-right"></i
+              ></a>
+            </article>
+          </div>
+          <div
+            class="business-logic"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            aria-label="Business model logic"
+          >
+            <span>Hardware Adoption</span><b>&rarr;</b
+            ><span>SaaS Subscription</span><b>&rarr;</b
+            ><span>Operational Intelligence</span><b>&rarr;</b
+            ><span>Recurring Revenue</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Demo Section -->
+      <section id="demo" class="py-20 section-shell">
+        <div class="container mx-auto px-6">
+          <div
+            class="glass-panel max-w-5xl mx-auto rounded-[2rem] p-6 md:p-10 lg:p-12"
+            data-aos="zoom-in"
+            data-aos-delay="80"
+          >
+            <div class="grid lg:grid-cols-[1.2fr_0.8fr] gap-8 items-center">
+              <div>
+                <p
+                  class="mb-3 text-xs font-bold uppercase tracking-[.18em] text-emerald-700"
+                >
+                  Investor-ready solution
+                </p>
+                <h2
+                  class="text-3xl md:text-4xl font-bold font-montserrat text-slate-900 leading-tight"
+                >
+                  A practical platform to improve milk safety, compliance, and
+                  trust.
+                </h2>
+                <p
+                  class="mt-4 max-w-xl text-base text-slate-600 leading-relaxed"
+                >
+                  DudhAmrut is built to help dairy operators reduce risk,
+                  improve traceability, and create measurable accountability
+                  across the value chain.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="mailto:dudhamrut.official@gmail.com?subject=Request%20for%20Pilot%20Demo"
+                    class="inline-flex items-center justify-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-500/20"
+                    data-magnetic
+                  >
+                    <i data-lucide="calendar-check-2" class="w-4 h-4"></i>
+                    Request a live demo
+                  </a>
+                  <a
+                    href="https://docs.google.com/videos/d/1HQIHiGgQvkhEKOS9PCQO0mdaAo5279QhCYGiA43whAo/play"
+                    target="_blank"
+                    class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white/80 px-6 py-3 text-sm font-semibold text-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-200 hover:text-emerald-700"
+                    data-magnetic
+                  >
+                    <i data-lucide="play-circle" class="w-4 h-4"></i>
+                    Watch video
+                  </a>
+                </div>
+              </div>
+
+              <div class="grid gap-4">
+                <div class="cinematic-card rounded-2xl p-4">
+                  <div
+                    class="flex items-center justify-between text-slate-500 text-xs uppercase tracking-[.12em]"
+                  >
+                    <span>Operational visibility</span>
+                    <span>24/7</span>
+                  </div>
+                  <div
+                    class="mt-3 text-3xl font-bold font-montserrat text-slate-900"
+                  >
+                    Real-time
+                  </div>
+                  <p class="mt-2 text-sm text-slate-600">
+                    Continuous quality and cold-chain monitoring across the
+                    dairy network.
+                  </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="cinematic-card rounded-2xl p-4">
+                    <div
+                      class="text-2xl font-bold font-montserrat text-slate-900"
+                    >
+                      Traceable
+                    </div>
+                    <p
+                      class="mt-2 text-xs uppercase tracking-[.12em] text-slate-500"
+                    >
+                      batch lineage
+                    </p>
+                  </div>
+                  <div class="cinematic-card rounded-2xl p-4">
+                    <div
+                      class="text-2xl font-bold font-montserrat text-slate-900"
+                    >
+                      Compliant
+                    </div>
+                    <p
+                      class="mt-2 text-xs uppercase tracking-[.12em] text-slate-500"
+                    >
+                      process assurance
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conclusion Banner -->
+      <section class="py-16 gradient-banner">
+        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+          <p
+            class="mb-4 text-xs font-bold uppercase tracking-[.18em] text-amber-200"
+          >
+            Safe • Transparent • Sustainable
+          </p>
+          <h2
+            class="text-3xl md:text-4xl font-bold font-montserrat text-white leading-tight"
+          >
+            DudhAmrut: Ensuring safe, transparent, and sustainable milk.
+          </h2>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section id="team" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold font-montserrat text-slate-800">
+              The Team
+            </h2>
+            <p class="mt-4 max-w-2xl mx-auto text-text-secondary">
+              Built by people who live the problem. Our co-founder runs an
+              actual milk collection center — DudhAmrut was not built from a
+              case study.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto"
+          >
+            <div
+              class="team-card bg-slate-50 rounded-xl p-6 text-center border border-slate-200"
+              data-aos="fade-up"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-emerald-100 flex items-center justify-center mx-auto mb-4"
+              >
+                <i data-lucide="user" class="w-10 h-10 text-emerald-400"></i>
+              </div>
+              <h3 class="font-bold text-lg">Shubham Salunke</h3>
+              <p class="text-emerald-600 text-sm font-medium mt-1">
+                Founder &amp; Team Lead
+              </p>
+              <p class="text-xs text-text-secondary mt-3">
+                Product vision · System architecture · AI &amp; full-stack
+                development · Research leadership
+              </p>
+            </div>
+            <div
+              class="team-card bg-slate-50 rounded-xl p-6 text-center border border-slate-200"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4"
+              >
+                <i data-lucide="user" class="w-10 h-10 text-green-400"></i>
+              </div>
+              <h3 class="font-bold text-lg">Dhiraj Gaikwad</h3>
+              <p class="text-green-500 text-sm font-medium mt-1">
+                Platform Development &amp; Finance
+              </p>
+              <p class="text-xs text-text-secondary mt-3">
+                Runs Rugved Dairy Farm, Bawada · Backend development ·
+                Real-world operational testing
+              </p>
+            </div>
+            <div
+              class="team-card bg-slate-50 rounded-xl p-6 text-center border border-slate-200"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-purple-100 flex items-center justify-center mx-auto mb-4"
+              >
+                <i data-lucide="user" class="w-10 h-10 text-purple-400"></i>
+              </div>
+              <h3 class="font-bold text-lg">Sakshi Bhosale</h3>
+              <p class="text-purple-500 text-sm font-medium mt-1">
+                Product Development &amp; Market Research
+              </p>
+              <p class="text-xs text-text-secondary mt-3">
+                User research · Product workflow design · Documentation &amp;
+                validation
+              </p>
+            </div>
+            <div
+              class="team-card bg-slate-50 rounded-xl p-6 text-center border border-slate-200"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-orange-100 flex items-center justify-center mx-auto mb-4"
+              >
+                <i data-lucide="user" class="w-10 h-10 text-orange-400"></i>
+              </div>
+              <h3 class="font-bold text-lg">Pratiksha Mane</h3>
+              <p class="text-orange-500 text-sm font-medium mt-1">
+                Business &amp; Stakeholder Engagement
+              </p>
+              <p class="text-xs text-text-secondary mt-3">
+                Market validation · Stakeholder coordination · Ecosystem
+                outreach
+              </p>
+            </div>
+            <div
+              class="team-card bg-slate-50 rounded-xl p-6 text-center border border-slate-200"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-teal-100 flex items-center justify-center mx-auto mb-4"
+              >
+                <i data-lucide="user" class="w-10 h-10 text-teal-400"></i>
+              </div>
+              <h3 class="font-bold text-lg">Shital Yadav</h3>
+              <p class="text-teal-500 text-sm font-medium mt-1">
+                Operations &amp; Quality Validation
+              </p>
+              <p class="text-xs text-text-secondary mt-3">
+                Testing &amp; QA · Workflow validation · Data management
+              </p>
+            </div>
+            <div
+              class="team-card bg-emerald-800 rounded-xl p-6 text-center border border-emerald-700"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-white flex items-center justify-center mx-auto mb-4"
+              >
+                <i
+                  data-lucide="graduation-cap"
+                  class="w-10 h-10 text-emerald-700"
+                ></i>
+              </div>
+              <h3 class="font-bold text-lg text-white">Dr. Neeta Doshi</h3>
+              <p class="text-emerald-100 text-sm font-medium mt-1">
+                Strategic Mentor
+              </p>
+              <p class="text-xs text-emerald-50 mt-3">
+                4 Patents · Technology commercialization · Innovation &amp;
+                research leadership
+              </p>
+            </div>
+          </div>
+          <div class="mt-20 text-center" data-aos="fade-up">
+            <p
+              class="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-2"
+            >
+              Validated &amp; Supported By
+            </p>
+            <div
+              class="w-12 h-0.5 bg-emerald-500 mx-auto mb-8 rounded-full"
+            ></div>
+          </div>
+          <div class="flex flex-wrap items-center justify-center gap-10 mt-10">
+            <div class="flex flex-col items-center gap-3 group">
+              <div
+                class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex items-center justify-center w-36 h-20 group-hover:shadow-md group-hover:border-emerald-200 transition-all duration-300"
+              >
+                <img
+                  src="images/partners/coe-dairy-baramati.png"
+                  alt="Centre of Excellence in Dairy Baramati"
+                  class="max-h-12 max-w-full object-contain"
+                  loading="lazy"
+                  onerror="
+                    this.parentElement.innerHTML =
+                      '&lt;span class=&quot;text-xs font-semibold text-slate-500 text-center px-2&quot;&gt;CoE Dairy Baramati&lt;/span&gt;'
+                  "
+                />
+              </div>
+              <p
+                class="text-xs text-slate-500 font-medium text-center max-w-32"
+              >
+                Centre of Excellence<br />in Dairy, Baramati
+              </p>
+              <span
+                class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-medium"
+                >Validation Partner</span
+              >
+            </div>
+            <div class="flex flex-col items-center gap-3 group">
+              <div
+                class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex items-center justify-center w-36 h-20 group-hover:shadow-md group-hover:border-emerald-200 transition-all duration-300"
+              >
+                <img
+                  src="images/partners/aic-adt-baramati.png"
+                  alt="Atal Incubation Center - Agriculture Development Trust Baramati"
+                  class="max-h-12 max-w-full object-contain"
+                  loading="lazy"
+                  onerror="
+                    this.parentElement.innerHTML =
+                      '&lt;span class=&quot;text-xs font-semibold text-slate-500 text-center px-2&quot;&gt;AIC-ADT Baramati&lt;/span&gt;'
+                  "
+                />
+              </div>
+              <p
+                class="text-xs text-slate-500 font-medium text-center max-w-32"
+              >
+                Atal Incubation Center<br />ADT Baramati
+              </p>
+              <span
+                class="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full font-medium"
+                >Incubation Partner</span
+              >
+            </div>
+            <div class="flex flex-col items-center gap-3 group">
+              <div
+                class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex items-center justify-center w-36 h-20 group-hover:shadow-md group-hover:border-emerald-200 transition-all duration-300"
+              >
+                <img
+                  src="images/partners/kvk-krushik.png"
+                  alt="Krishi Vigyan Kendra - Krushik National Agriculture Exhibition"
+                  class="max-h-12 max-w-full object-contain"
+                  loading="lazy"
+                  onerror="
+                    this.parentElement.innerHTML =
+                      '&lt;span class=&quot;text-xs font-semibold text-slate-500 text-center px-2&quot;&gt;KVK Krushik&lt;/span&gt;'
+                  "
+                />
+              </div>
+              <p
+                class="text-xs text-slate-500 font-medium text-center max-w-32"
+              >
+                KVK Krushik 2026<br />National Agri Exhibition
+              </p>
+              <span
+                class="text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded-full font-medium"
+                >Field Validation</span
+              >
+            </div>
+            <div class="flex flex-col items-center gap-3 group">
+              <div
+                class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex items-center justify-center w-36 h-20 group-hover:shadow-md group-hover:border-emerald-200 transition-all duration-300"
+              >
+                <img
+                  src="images/partners/svpm-college.png"
+                  alt="SVPM College of Engineering Malegaon"
+                  class="max-h-12 max-w-full object-contain"
+                  loading="lazy"
+                  onerror="
+                    this.parentElement.innerHTML =
+                      '&lt;span class=&quot;text-xs font-semibold text-slate-500 text-center px-2&quot;&gt;SVPM College of Engineering&lt;/span&gt;'
+                  "
+                />
+              </div>
+              <p
+                class="text-xs text-slate-500 font-medium text-center max-w-32"
+              >
+                SVPM College<br />of Engineering, Malegaon
+              </p>
+              <span
+                class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full font-medium"
+                >Home Institution</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div
+          class="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr] gap-10 pb-10 border-b border-white/15"
+        >
+          <div>
+            <a href="#top" class="flex items-center gap-3">
+              <i data-lucide="droplets" class="w-6 h-6 text-amber-300"></i>
+              <div class="text-xl font-bold font-montserrat">DudhAmrut</div>
+            </a>
+            <p class="mt-4 text-sm max-w-lg">
+              IoT &amp; Blockchain for a purer, more transparent, and safer
+              dairy supply chain.
+            </p>
+          </div>
+          <div>
+            <p
+              class="text-xs font-bold uppercase tracking-[.16em] text-white mb-4"
+            >
+              Explore
+            </p>
+            <div class="grid gap-2 text-sm">
+              <a href="#problem">Problem</a><a href="#solution">Solution</a
+              ><a href="#features">Platform</a
+              ><a href="#architecture">Technology</a
+              ><a href="#evidence">Evidence</a><a href="#team">Team</a>
+            </div>
+          </div>
+          <div>
+            <p
+              class="text-xs font-bold uppercase tracking-[.16em] text-white mb-4"
+            >
+              Contact
+            </p>
+            <a href="mailto:dudhamrut.official@gmail.com" class="text-sm"
+              >dudhamrut.official@gmail.com</a
+            >
+            <p class="text-xs mt-3">
+              Malegaon &amp; Baramati, Maharashtra, India
+            </p>
+            <a
+              href="mailto:dudhamrut.official@gmail.com"
+              class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-white"
+              >Request a Pilot Demo
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i
+            ></a>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row justify-between gap-1 pt-3">
+          <p class="text-xs">&copy; 2026 DudhAmrut. All rights reserved.</p>
+          <p class="text-xs">Trust in every drop.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Quick-Nav Button -->
+    <div class="quick-nav group">
+      <!-- The Menu -->
+      <div
+        class="quick-nav-menu w-48 bg-white rounded-lg shadow-xl border border-border-color overflow-hidden"
+      >
+        <a
+          href="#problem"
+          class="block px-4 py-3 text-sm font-medium text-text-secondary hover:bg-slate-50 hover:text-emerald-600 transition-colors duration-200"
+          >Problem Statement</a
+        >
+        <a
+          href="#features"
+          class="block px-4 py-3 text-sm font-medium text-text-secondary hover:bg-slate-50 hover:text-emerald-600 transition-colors duration-200"
+          >Key Features</a
+        >
+        <a
+          href="#impact"
+          class="block px-4 py-3 text-sm font-medium text-text-secondary hover:bg-slate-50 hover:text-emerald-600 transition-colors duration-200"
+          >Measurable Impact</a
+        >
+        <a
+          href="#journey"
+          class="block px-4 py-3 text-sm font-medium text-text-secondary hover:bg-slate-50 hover:text-emerald-600 transition-colors duration-200"
+          >Our Journey</a
+        >
+        <a
+          href="#business-model"
+          class="block px-4 py-3 text-sm font-medium text-text-secondary hover:bg-slate-50 hover:text-emerald-600 transition-colors duration-200"
+          >Business Model</a
+        >
+      </div>
+      <!-- The Button -->
+      <button
+        class="text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center glow-button transition-transform group-hover:scale-105 bg-emerald-800"
+      >
+        <i data-lucide="navigation" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <script src="app.js?v=5"></script>
+  </body>
+</html>
