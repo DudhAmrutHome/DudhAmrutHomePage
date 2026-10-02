@@ -707,7 +707,7 @@
           }
         });
         heroTitle.classList.add("is-split");
-        heroTitle.append(frag);
+        heroTitle.replaceChildren(frag);
       }
 
       /* ---------- Drifting gradient orbs + scroll parallax ---------- */
