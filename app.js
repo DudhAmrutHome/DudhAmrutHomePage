@@ -173,11 +173,11 @@
 
         // Initialize AOS (Animate on Scroll)
         AOS.init({
-          duration: 950,
+          duration: 780,
           once: true,
-          offset: 60,
-          easing: "ease-out-sine",
-          delay: 40,
+          offset: 48,
+          easing: "ease-out-cubic",
+          delay: 20,
         });
 
         // Hero visual: buttery 3D tilt that follows the pointer.
@@ -196,8 +196,8 @@
           let raf = null;
 
           const loop = () => {
-            curX += (targetX - curX) * 0.1;
-            curY += (targetY - curY) * 0.1;
+            curX += (targetX - curX) * 0.085;
+            curY += (targetY - curY) * 0.085;
             visual.style.transform = `perspective(1100px) rotateX(${curX.toFixed(
               2,
             )}deg) rotateY(${curY.toFixed(2)}deg)`;
@@ -212,8 +212,8 @@
             const rect = visual.getBoundingClientRect();
             const px = (event.clientX - rect.left) / rect.width - 0.5;
             const py = (event.clientY - rect.top) / rect.height - 0.5;
-            targetY = py * 12;
-            targetX = px * -10;
+            targetX = py * -7;
+            targetY = px * 8;
             if (!raf) raf = requestAnimationFrame(loop);
           });
 
@@ -810,5 +810,94 @@
           el.addEventListener("click", reset);
         });
       }
+    })();
+
+    /* ---------- On-page live demo request form ---------- */
+    (() => {
+      const dialog = document.getElementById("demo-request-dialog");
+      const form = document.getElementById("demo-request-form");
+      if (!dialog || !form) return;
+
+      const openButtons = document.querySelectorAll("[data-demo-open]");
+      const closeButton = dialog.querySelector("[data-demo-close]");
+      const status = document.getElementById("demo-form-status");
+      const submitButton = form.querySelector('button[type="submit"]');
+      const submitLabel = submitButton.querySelector("span");
+
+      const setStatus = (message = "", type = "") => {
+        status.textContent = message;
+        status.className = `demo-form-status${type ? ` is-${type}` : ""}`;
+      };
+
+      const openDialog = () => {
+        setStatus();
+        if (typeof dialog.showModal === "function") dialog.showModal();
+        else dialog.setAttribute("open", "");
+        document.body.classList.add("demo-dialog-open");
+        window.setTimeout(() => form.elements.name.focus(), 80);
+      };
+
+      const closeDialog = () => {
+        if (typeof dialog.close === "function") dialog.close();
+        else dialog.removeAttribute("open");
+        document.body.classList.remove("demo-dialog-open");
+      };
+
+      openButtons.forEach((button) => button.addEventListener("click", openDialog));
+      closeButton.addEventListener("click", closeDialog);
+      dialog.addEventListener("close", () => {
+        document.body.classList.remove("demo-dialog-open");
+      });
+      dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) closeDialog();
+      });
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        if (!form.reportValidity()) return;
+
+        const formData = new FormData(form);
+        if (formData.get("_honey")) {
+          form.reset();
+          setStatus("Thank you. Your request has been received.", "success");
+          return;
+        }
+
+        submitButton.disabled = true;
+        submitLabel.textContent = "Sending...";
+        setStatus("Securely sending your request...");
+
+        try {
+          const response = await fetch(
+            "https://formsubmit.co/ajax/dudhamrut.official@gmail.com",
+            {
+              method: "POST",
+              headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(Object.fromEntries(formData.entries())),
+            },
+          );
+          const result = await response.json();
+          if (!response.ok || result.success === false || result.success === "false") {
+            throw new Error(result.message || "Unable to send request");
+          }
+
+          form.reset();
+          setStatus(
+            "Request sent successfully. Our team will contact you shortly.",
+            "success",
+          );
+        } catch (error) {
+          setStatus(
+            "We couldn't send the request right now. Please try again in a moment.",
+            "error",
+          );
+        } finally {
+          submitButton.disabled = false;
+          submitLabel.textContent = "Send demo request";
+        }
+      });
     })();
     
