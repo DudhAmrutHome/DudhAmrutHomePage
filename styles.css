@@ -7016,6 +7016,19 @@ body.is-loaded .hero-word.has-mark > span {
   overflow: hidden;
 }
 
+/* Remove decorative sweeps/scan lines that cross photographs on hover. */
+.hero-visual-card::after,
+.feature-card::after,
+.evidence-card::after,
+.team-card::after,
+.journey-media::after,
+.journey-content::after,
+.glass-panel::after {
+  content: none !important;
+  display: none !important;
+  animation: none !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .hero-visual-card img,
   .solution-image img,
@@ -7023,12 +7036,10 @@ body.is-loaded .hero-word.has-mark > span {
   .journey-image,
   .field-strip img,
   #team .team-card img {
-    transform: translateZ(0) scale(1.001);
-    filter: saturate(0.98) contrast(1.01);
-    transition:
-      transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-      filter 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    backface-visibility: hidden;
+    transform: none;
+    filter: none;
+    transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+    backface-visibility: visible;
   }
 
   .hero-visual-card:hover img,
@@ -7037,8 +7048,8 @@ body.is-loaded .hero-word.has-mark > span {
   .journey-item:hover .journey-image,
   .field-strip figure:hover img,
   #team .team-card:hover img {
-    transform: translateZ(0) scale(1.055);
-    filter: saturate(1.04) contrast(1.025);
+    transform: scale(1.02);
+    filter: none;
   }
 
   .field-strip figure {
@@ -7049,9 +7060,9 @@ body.is-loaded .hero-word.has-mark > span {
   }
 
   .field-strip figure:hover {
-    transform: translateY(-4px);
-    border-color: rgba(56, 189, 248, 0.46);
-    box-shadow: 0 24px 48px -26px rgba(2, 132, 199, 0.4);
+    transform: translateY(-2px);
+    border-color: rgba(56, 189, 248, 0.3);
+    box-shadow: 0 16px 32px -26px rgba(2, 132, 199, 0.3);
   }
 }
 
@@ -7503,5 +7514,110 @@ body.demo-dialog-open {
   header a.bg-emerald-900 {
     transition-duration: 0.42s;
     transition-timing-function: var(--ease-expo);
+  }
+}
+
+/* ==========================================================
+   COHESIVE INTERACTION MOTION
+   Subtle elevation, consistent easing and tactile feedback.
+   ========================================================== */
+:root {
+  --motion-ui: cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-shadow: 0 18px 38px -24px rgba(2, 132, 199, 0.34);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cinematic-card,
+  .feature-card,
+  .team-card,
+  .evidence-card,
+  .business-card,
+  .market-card,
+  .core-module,
+  .solution-card-inner,
+  .journey-media,
+  .journey-content,
+  .mission-statement {
+    transition:
+      transform 0.45s var(--motion-ui),
+      box-shadow 0.45s var(--motion-ui),
+      border-color 0.35s ease,
+      background-color 0.35s ease;
+  }
+
+  .business-card-action i,
+  .core-module-action i,
+  .hero-actions a i,
+  .hero-secondary i,
+  #header a[href="#demo"] i,
+  .mobile-demo-btn i {
+    transition: transform 0.4s var(--motion-ui);
+  }
+
+  .hero-actions a,
+  .hero-secondary,
+  .business-card-action,
+  .core-module-action,
+  .demo-submit-button,
+  #header a[href="#demo"] {
+    transition:
+      transform 0.38s var(--motion-ui),
+      box-shadow 0.38s var(--motion-ui),
+      background-color 0.35s ease,
+      border-color 0.35s ease,
+      color 0.35s ease;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .cinematic-card:hover,
+  .feature-card:hover,
+  .team-card:hover,
+  .evidence-card:hover,
+  .business-card:hover,
+  .market-card:hover,
+  .core-module:hover,
+  .mission-statement:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: var(--motion-shadow) !important;
+  }
+
+  .solution-card:hover {
+    transform: none !important;
+  }
+
+  .solution-card-inner:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: var(--motion-shadow) !important;
+  }
+
+  .journey-item:hover .journey-media,
+  .journey-item:hover .journey-content {
+    transform: translateY(-3px) !important;
+    box-shadow: var(--motion-shadow);
+  }
+
+  #features .feature-activate:hover > div:first-child {
+    transform: translateY(-2px) scale(1.045) !important;
+    box-shadow: 0 12px 24px -16px rgba(2, 132, 199, 0.42);
+  }
+
+  .business-card-action:hover i,
+  .core-module-action:hover i,
+  .hero-actions a:hover i,
+  .hero-secondary:hover i,
+  #header a[href="#demo"]:hover i,
+  .mobile-demo-btn:hover i {
+    transform: translate(2px, -1px);
+  }
+
+  .hero-actions a:active,
+  .hero-secondary:active,
+  .business-card-action:active,
+  .core-module-action:active,
+  .demo-submit-button:active,
+  #header a[href="#demo"]:active {
+    transform: translateY(0) scale(0.98) !important;
+    transition-duration: 0.12s;
   }
 }
